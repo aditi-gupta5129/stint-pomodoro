@@ -1,0 +1,221 @@
+/* Base theme tokens — Classic */
+.app {
+  --bg-gradient: linear-gradient(145deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+  --text: #f1f5f9;
+  --logo-start: #818cf8;
+  --logo-end: #c084fc;
+  --subtitle: #94a3b8;
+  --surface: rgba(30, 41, 59, 0.85);
+  --surface-solid: #1e293b;
+  --surface-border: rgba(148, 163, 184, 0.15);
+  --select-bg: #334155;
+  --select-hover: #3b4f6b;
+  --select-focus: #818cf8;
+  --select-chevron: %2394a3b8;
+  --title: #e2e8f0;
+  --weekday: #64748b;
+  --day-bg: rgba(51, 65, 85, 0.5);
+  --day-text: #e2e8f0;
+  --day-hover-bg: rgba(99, 102, 241, 0.25);
+  --day-hover-border: rgba(129, 140, 248, 0.4);
+  --day-outside-text: #475569;
+  --day-outside-bg: rgba(30, 41, 59, 0.4);
+  --today-bg: linear-gradient(135deg, rgba(99, 102, 241, 0.35), rgba(192, 132, 252, 0.25));
+  --today-border: #818cf8;
+  --dot-task: #34d399;
+  --dot-reminder: #fbbf24;
+  --overlay: rgba(15, 23, 42, 0.75);
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --item-bg: rgba(51, 65, 85, 0.5);
+  --item-hover: rgba(51, 65, 85, 0.8);
+  --input-bg: rgba(15, 23, 42, 0.6);
+  --accent: #818cf8;
+  --accent-bg: rgba(99, 102, 241, 0.12);
+  --btn-start: #6366f1;
+  --btn-end: #8b5cf6;
+  --btn-shadow: rgba(99, 102, 241, 0.4);
+  --btn-secondary-start: #475569;
+  --btn-secondary-end: #334155;
+  --check-border: #64748b;
+  --scheduled: #fbbf24;
+  --card-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  --theme-picker-bg: rgba(30, 41, 59, 0.9);
+  --font-heading: inherit;
+}
+
+/* Gwen Stacy — pink, cyan, white, black */
+.app[data-theme="gwen"] {
+  --bg-gradient: linear-gradient(160deg, #0a0a0a 0%, #1a0a14 35%, #0d1520 70%, #000000 100%);
+  --text: #ffffff;
+  --logo-start: #ff4da6;
+  --logo-end: #00d4ff;
+  --subtitle: #ffb3d9;
+  --surface: rgba(20, 10, 18, 0.92);
+  --surface-solid: #140812;
+  --surface-border: rgba(255, 77, 166, 0.35);
+  --select-bg: #1a0a12;
+  --select-hover: #2a1020;
+  --select-focus: #00d4ff;
+  --select-chevron: %23ff4da6;
+  --title: #ffffff;
+  --weekday: #00d4ff;
+  --day-bg: rgba(255, 255, 255, 0.06);
+  --day-text: #ffffff;
+  --day-hover-bg: rgba(255, 77, 166, 0.25);
+  --day-hover-border: #ff4da6;
+  --day-outside-text: #555;
+  --day-outside-bg: rgba(0, 0, 0, 0.35);
+  --today-bg: linear-gradient(135deg, rgba(255, 77, 166, 0.45), rgba(0, 212, 255, 0.25));
+  --today-border: #00d4ff;
+  --dot-task: #00d4ff;
+  --dot-reminder: #ff4da6;
+  --overlay: rgba(0, 0, 0, 0.82);
+  --text-secondary: #ffb3d9;
+  --text-muted: #888;
+  --item-bg: rgba(255, 255, 255, 0.07);
+  --item-hover: rgba(255, 77, 166, 0.15);
+  --input-bg: rgba(0, 0, 0, 0.45);
+  --accent: #00d4ff;
+  --accent-bg: rgba(0, 212, 255, 0.12);
+  --btn-start: #ff4da6;
+  --btn-end: #00d4ff;
+  --btn-shadow: rgba(255, 77, 166, 0.45);
+  --btn-secondary-start: #333;
+  --btn-secondary-end: #111;
+  --check-border: #ff4da6;
+  --scheduled: #00d4ff;
+  --card-shadow: 0 25px 50px -12px rgba(255, 77, 166, 0.25);
+  --theme-picker-bg: rgba(20, 8, 18, 0.95);
+  --font-heading: "Segoe UI", system-ui, sans-serif;
+}
+
+.app[data-theme="gwen"]::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255, 77, 166, 0.12) 0%, transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(0, 212, 255, 0.1) 0%, transparent 40%);
+  z-index: 0;
+}
+
+/* Spider-Man — red, blue, black, white */
+.app[data-theme="spiderman"] {
+  --bg-gradient: linear-gradient(165deg, #0c0c0c 0%, #1a0508 25%, #050818 75%, #0a0a0a 100%);
+  --text: #ffffff;
+  --logo-start: #e23636;
+  --logo-end: #1565c0;
+  --subtitle: #b0bec5;
+  --surface: rgba(15, 10, 12, 0.9);
+  --surface-solid: #121018;
+  --surface-border: rgba(226, 54, 54, 0.4);
+  --select-bg: #1a1015;
+  --select-hover: #251820;
+  --select-focus: #e23636;
+  --select-chevron: %23e23636;
+  --title: #ffffff;
+  --weekday: #1565c0;
+  --day-bg: rgba(255, 255, 255, 0.05);
+  --day-text: #f5f5f5;
+  --day-hover-bg: rgba(226, 54, 54, 0.28);
+  --day-hover-border: #e23636;
+  --day-outside-text: #444;
+  --day-outside-bg: rgba(0, 0, 0, 0.4);
+  --today-bg: linear-gradient(135deg, rgba(226, 54, 54, 0.5), rgba(21, 101, 192, 0.35));
+  --today-border: #e23636;
+  --dot-task: #1565c0;
+  --dot-reminder: #e23636;
+  --overlay: rgba(0, 0, 0, 0.85);
+  --text-secondary: #90caf9;
+  --text-muted: #78909c;
+  --item-bg: rgba(255, 255, 255, 0.06);
+  --item-hover: rgba(21, 101, 192, 0.2);
+  --input-bg: rgba(0, 0, 0, 0.5);
+  --accent: #e23636;
+  --accent-bg: rgba(226, 54, 54, 0.15);
+  --btn-start: #e23636;
+  --btn-end: #1565c0;
+  --btn-shadow: rgba(226, 54, 54, 0.45);
+  --btn-secondary-start: #263238;
+  --btn-secondary-end: #111;
+  --check-border: #1565c0;
+  --scheduled: #ff5252;
+  --card-shadow: 0 25px 50px -12px rgba(226, 54, 54, 0.2);
+  --theme-picker-bg: rgba(18, 10, 15, 0.95);
+}
+
+.app[data-theme="spiderman"]::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 40px,
+      rgba(226, 54, 54, 0.03) 40px,
+      rgba(226, 54, 54, 0.03) 41px
+    ),
+    radial-gradient(circle at 10% 50%, rgba(21, 101, 192, 0.15) 0%, transparent 35%),
+    radial-gradient(circle at 90% 50%, rgba(226, 54, 54, 0.12) 0%, transparent 35%);
+  z-index: 0;
+}
+
+/* Minimal beige */
+.app[data-theme="minimal"] {
+  --bg-gradient: linear-gradient(180deg, #f7f3eb 0%, #ebe4d8 100%);
+  --text: #3d3832;
+  --logo-start: #8b7355;
+  --logo-end: #a69076;
+  --subtitle: #7a7268;
+  --surface: rgba(255, 252, 247, 0.95);
+  --surface-solid: #fffcf7;
+  --surface-border: rgba(139, 115, 85, 0.2);
+  --select-bg: #f0ebe3;
+  --select-hover: #e8e0d4;
+  --select-focus: #8b7355;
+  --select-chevron: %238b7355;
+  --title: #3d3832;
+  --weekday: #9a8f82;
+  --day-bg: rgba(255, 255, 255, 0.7);
+  --day-text: #3d3832;
+  --day-hover-bg: rgba(139, 115, 85, 0.12);
+  --day-hover-border: rgba(139, 115, 85, 0.35);
+  --day-outside-text: #c4bbb0;
+  --day-outside-bg: rgba(235, 228, 216, 0.5);
+  --today-bg: linear-gradient(135deg, rgba(139, 115, 85, 0.2), rgba(166, 144, 118, 0.15));
+  --today-border: #8b7355;
+  --dot-task: #6b9080;
+  --dot-reminder: #c9a66b;
+  --overlay: rgba(61, 56, 50, 0.35);
+  --text-secondary: #7a7268;
+  --text-muted: #9a8f82;
+  --item-bg: rgba(255, 255, 255, 0.85);
+  --item-hover: rgba(240, 235, 227, 1);
+  --input-bg: rgba(255, 255, 255, 0.9);
+  --accent: #8b7355;
+  --accent-bg: rgba(139, 115, 85, 0.1);
+  --btn-start: #8b7355;
+  --btn-end: #a69076;
+  --btn-shadow: rgba(139, 115, 85, 0.35);
+  --btn-secondary-start: #d4ccc0;
+  --btn-secondary-end: #c4bbb0;
+  --check-border: #a69076;
+  --scheduled: #c9a66b;
+  --card-shadow: 0 20px 40px -12px rgba(61, 56, 50, 0.12);
+  --theme-picker-bg: rgba(255, 252, 247, 0.98);
+  --font-heading: Georgia, "Times New Roman", serif;
+}
+
+.app[data-theme="minimal"] .add-form__btn,
+.app[data-theme="minimal"] .btn--primary,
+.app[data-theme="minimal"] .remind-btn {
+  color: #fffcf7;
+}
+
+.app[data-theme="minimal"] .modal__badge {
+  color: #fffcf7;
+}
